@@ -49,17 +49,17 @@ button.addEventListener(`click`, function() {
         //Calcolo e cambio colore in base alla situazione
         if(i % 3 === 0 && i % 5 === 0){
             text = "FizzBuzz";
-            number.innerHTML += `<div class="cardnumber fizzbuzz">` + text + `</div>`;
+            number.innerHTML += '<div class="cardnumber fizzbuzz"><span>' + text + '</span></div>';
         } else if (i % 3 === 0){
             text = "Fizz";
-            number.innerHTML += `<div class="cardnumber fizz">` + text + `</div>`;
-        } else if (i % 5 === 0){
+            number.innerHTML += '<div class="cardnumber fizz"><span>' + text + '</span></div>';
+        } else if (i % 5 === 0) {
             text = "Buzz";
-            number.innerHTML += `<div class="cardnumber buzz">` + text + `</div>`;
-        } else {
+            number.innerHTML += '<div class="cardnumber buzz"><span>' + text + '</span></div>';
+          } else {
             text = i.toString();
-            number.innerHTML += '<div class="cardnumber text-black">' + text + '</div>';
-        }
+            number.innerHTML += '<div class="cardnumber text-black"><span>' + text + '</span></div>';
+          }
     }
 })
 
@@ -69,5 +69,6 @@ button2.addEventListener(`click`, function(){
     //Row Display
     const result = document.getElementById(`result`)
     result.classList.add(`d-none`);
+    number.innerHTML = "";
 
 })
