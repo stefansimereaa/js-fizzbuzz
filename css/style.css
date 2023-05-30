@@ -1,0 +1,42 @@
+:root{
+    --BgColor : #083b4c ;
+    --Normal : #1389b2 ; 
+    --Fizz : #0ed5a1 ; 
+    --Buzz : #ffd166 ; 
+    --FizzBuzz : #ef466f ;
+}
+
+/* Style */
+
+.cardnumber{
+    display: inline-block;
+      width: 120px;
+      height: 120px;
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+      margin: 5px;
+      background-color: white;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      font-family: Arial, sans-serif;
+}
+
+.bg-blu{
+    background-color: var(--BgColor);
+}
+
+main h1{
+    font-size: 50px;
+}
+
+.buzz{
+    background-color: var(--Buzz);
+}
+
+.fizz{
+    background-color: var(--Fizz);
+}
+
+.fizzbuzz{
+    background-color: var(--FizzBuzz);
+}
